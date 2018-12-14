@@ -1,0 +1,316 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+/**Hide the actual Google Translate Item**/
+#google_translate_element {
+	display:none;
+}
+/**Style the select button**/
+#language-btn {
+	position:fixed;
+	right:25px;
+	top:0;
+	border:solid 1px #ccc;
+	border-top:none;
+	background:#f1f1f1;
+	padding:4px 10px;
+	text-transform:uppercase;
+	font-size:12px;
+	cursor:pointer;
+	z-index:500;
+}
+#language-btn2 {
+	background:url(../images/united-states.png);
+	background-color:#f1f1f1;
+	border:solid 1px #ccc;
+	cursor:pointer;
+	border-top:none;
+	background-repeat:no-repeat;
+	background-position:center;
+	width:22px;
+	height:16px;
+	padding:5px;
+	position:fixed;
+	bottom:0;
+	right:200px;
+}
+.languages.active {
+	display:block;
+}
+/**Style the new language list**/
+.languages {
+	display:none;
+	position:fixed;
+	width:175px;
+	background:#f1f1f1;
+	overflow-y:scroll;
+	height:100%;
+	border-right:solid 1px #ccc;
+	z-index:500;
+}
+.languages ol {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.languages ol li a {
+	display:block;
+	text-decoration:none;
+	padding:5px 0px;
+	padding-left:15px;
+	border-bottom:solid 1px #ccc;
+	color:#666;
+}
+.languages ol li a:hover {
+	background:#ddd;
+}
+.languages span {
+	width:22px;
+	height:16px;
+	display:block;
+	float:left;
+	margin-right:10px;
+	margin-top:2px;
+}
+.languages span.albania {
+	background:url(../images/albania.png) no-repeat;
+}
+.languages span.albania {
+	background:url(../images/albania.png) no-repeat;
+}
+.languages span.argentina {
+	background:url(../images/argentina.png) no-repeat;
+}
+.languages span.armenia {
+	background:url(../images/armenia.png) no-repeat;
+}
+.languages span.azerbaijan {
+	background:url(../images/azerbaijan.png) no-repeat;
+}
+.languages span.belarus {
+	background:url(../images/belarus.png) no-repeat;
+}
+.languages span.bengal {
+	background:url(../images/bengal.png) no-repeat;
+}
+.languages span.bosnia {
+	background:url(../images/bosnia.png) no-repeat;
+}
+.languages span.bulgaria {
+	background:url(../images/bulgaria.png) no-repeat;
+}
+.languages span.cambodia {
+	background:url(../images/cambodia.png) no-repeat;
+}
+.languages span.catalonia {
+	background:url(../images/catalonia.png) no-repeat;
+}
+.languages span.china {
+	background:url(../images/china.png) no-repeat;
+}
+.languages span.croatia {
+	background:url(../images/croatia.png) no-repeat;
+}
+.languages span.czech-republic {
+	background:url(../images/czech-republic.png) no-repeat;
+}
+.languages span.denmark {
+	background:url(../images/denmark.png) no-repeat;
+}
+.languages span.esperanto {
+	background:url(../images/esperanto.png) no-repeat;
+}
+.languages span.estonia {
+	background:url(../images/estonia.png) no-repeat;
+}
+.languages span.finland {
+	background:url(../images/finland.png) no-repeat;
+}
+.languages span.france {
+	background:url(../images/france.png) no-repeat;
+}
+.languages span.galacia {
+	background:url(../images/galacia.png) no-repeat;
+}
+.languages span.georgian {
+	background:url(../images/georgian.png) no-repeat;
+}
+.languages span.germany {
+	background:url(../images/germany.png) no-repeat;
+}
+.languages span.greece {
+	background:url(../images/greece.png) no-repeat;
+}
+.languages span.haiti {
+	background:url(../images/haiti.png) no-repeat;
+}
+.languages span.hungary {
+	background:url(../images/hungary.png) no-repeat;
+}
+.languages span.iceland {
+	background:url(../images/iceland.png) no-repeat;
+}
+.languages span.india {
+	background:url(../images/india.png) no-repeat;
+}
+.languages span.indonesia {
+	background:url(../images/indonesia.png) no-repeat;
+}
+.languages span.iran {
+	background:url(../images/iran.png) no-repeat;
+}
+.languages span.ireland {
+	background:url(../images/ireland.png) no-repeat;
+}
+.languages span.israel {
+	background:url(../images/israel.png) no-repeat;
+}
+.languages span.italy {
+	background:url(../images/italy.png) no-repeat;
+}
+.languages span.japan {
+	background:url(../images/japan.png) no-repeat;
+}
+.languages span.java {
+	background:url(../images/java.png) no-repeat;
+}
+.languages span.kazakhstan {
+	background:url(../images/kazakhstan.png) no-repeat;
+}
+.languages span.laos {
+	background:url(../images/laos.png) no-repeat;
+}
+.languages span.latvia {
+	background:url(../images/latvia.png) no-repeat;
+}
+.languages span.lesotho {
+	background:url(../images/lesotho.png) no-repeat;
+}
+.languages span.lithuania {
+	background:url(../images/lithuania.png) no-repeat;
+}
+.languages span.macedonia {
+	background:url(../images/macedonia.png) no-repeat;
+}
+.languages span.madagascar {
+	background:url(../images/madagascar.png) no-repeat;
+}
+.languages span.malaysia {
+	background:url(../images/malaysia.png) no-repeat;
+}
+.languages span.malta {
+	background:url(../images/malta.png) no-repeat;
+}
+.languages span.mongolia {
+	background:url(../images/mongolia.png) no-repeat;
+}
+.languages span.myanmar {
+	background:url(../images/myanmar.png) no-repeat;
+}
+.languages span.nepal {
+	background:url(../images/nepal.png) no-repeat;
+}
+.languages span.netherlands {
+	background:url(../images/netherlands.png) no-repeat;
+}
+.languages span.new-zealand {
+	background:url(../images/new-zealand.png) no-repeat;
+}
+.languages span.niger {
+	background:url(../images/niger.png) no-repeat;
+}
+.languages span.nigeria {
+	background:url(../images/nigeria.png) no-repeat;
+}
+.languages span.norway {
+	background:url(../images/norway.png) no-repeat;
+}
+.languages span.pakistan {
+	background:url(../images/pakistan.png) no-repeat;
+}
+.languages span.poland {
+	background:url(../images/poland.png) no-repeat;
+}
+.languages span.portugal {
+	background:url(../images/portugal.png) no-repeat;
+}
+.languages span.philippines {
+	background:url(../images/philippines.png) no-repeat;
+}
+.languages span.romania {
+	background:url(../images/romania.png) no-repeat;
+}
+.languages span.russia {
+	background:url(../images/russia.png) no-repeat;
+}
+.languages span.saudi-arabia {
+	background:url(../images/saudi-arabia.png) no-repeat;
+}
+.languages span.serbia {
+	background:url(../images/south-korea.png) no-repeat;
+}
+.languages span.slovakia {
+	background:url(../images/slovakia.png) no-repeat;
+}
+.languages span.slovenia {
+	background:url(../images/slovenia.png) no-repeat;
+}
+.languages span.somalia {
+	background:url(../images/somalia.png) no-repeat;
+}
+.languages span.south-africa {
+	background:url(../images/south-africa.png) no-repeat;
+}
+.languages span.south-korea {
+	background:url(../images/south-korea.png) no-repeat;
+}
+.languages span.spain {
+	background:url(../images/spain.png) no-repeat;
+}
+.languages span.sri-lanka {
+	background:url(../images/sri-lanka.png) no-repeat;
+}
+.languages span.sudan {
+	background:url(../images/sudan.png) no-repeat;
+}
+.languages span.sweden {
+	background:url(../images/sweden.png) no-repeat;
+}
+.languages span.tajikistan {
+	background:url(../images/tajikistan.png) no-repeat;
+}
+.languages span.tanzania {
+	background:url(../images/tanzania.png) no-repeat;
+}
+.languages span.thailand {
+	background:url(../images/thailand.png) no-repeat;
+}
+.languages span.turkey {
+	background:url(../images/turkey.png) no-repeat;
+}
+.languages span.ukraine {
+	background:url(../images/ukraine.png) no-repeat;
+}
+.languages span.united-states {
+	background:url(../images/united-states.png) no-repeat;
+}
+.languages span.uzbekistan {
+	background:url(../images/uzbekistan.png) no-repeat;
+}
+.languages span.vatican-city {
+	background:url(../images/vatican-city.png) no-repeat;
+}
+.languages span.vietnam {
+	background:url(../images/vietnam.png) no-repeat;
+}
+.languages span.wales {
+	background:url(../images/wales.png) no-repeat;
+}
+.languages span.zimbabwe {
+	background:url(../images/zimbabwe.png) no-repeat;
+}
+/**General Styles**/
+body {
+	margin:0;
+	padding:0;
+	font-family:"Lato", sans-serif;
+	font-size:14px;
+}
